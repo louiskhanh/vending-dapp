@@ -22,9 +22,7 @@ const VendingMachine = () => {
 	const [restock, setRestock] = useState(0)
 	const [restockAmount, SetRestockAmount] = useState('')
 
-	useEffect(() => {
-		connectWalletHandler()
-	},[])
+	
 	useEffect(() => {
 		
 
@@ -128,25 +126,25 @@ const VendingMachine = () => {
 
 			</Head>  
 			<div className="container">
-					<div className="navbar-brand m-3">
+					<div class="navbar-brand m-3">
 						<h1 class="title"> Vending Machine</h1> 
 
 		 			</div> 
-		 			<div className="navbar-end m-3">
+		 			<div class="navbar-end m-3">
 		 				<button className="button is-primary" onClick={connectWalletHandler} > Connect Wallet </button>
 		 			</div>
 
 		 	</div>
-		 	<div className="container">
-		 		<div className="navbar-end m-4">
+		 	<div class="container">
+		 		<div class="navbar-end m-4">
 		 				<p> Address : </p> {address} 
 		 		</div>
 		 	</div>
 		 	<div class="columns">
 		 	    
 			 	<div class="column m-6">
-			 		<div className="container">
-			 			<div className={styles.card}>
+			 		<div class="container">
+			 			<div class={styles.card}>
 			 				<label className="label">Donut Price : 1 ETH</label>
 			 				<div className="control">
 			 					<input onChange={updateDonutQty} class="input is-rounded" type="text" placeholder="Enter amount ..." />
