@@ -126,28 +126,28 @@ const VendingMachine = () => {
 
       </Head>  
       <div className="container">
-          <div class="navbar-brand m-3">
-            <h1 class="title"> Vending Machine</h1> 
+          <div className="navbar-brand m-3">
+            <h1 className="title"> Vending Machine</h1> 
 
           </div> 
-          <div class="navbar-end m-3">
+          <div className="navbar-end m-3">
             <button className="button is-primary" onClick={connectWalletHandler} > Connect Wallet </button>
           </div>
 
       </div>
-      <div class="container">
-        <div class="navbar-end m-4">
+      <div className="container">
+        <div className="navbar-end m-4">
             <p> Address : </p> {address} 
         </div>
       </div>
-      <div class="columns">
+      <div className="columns">
           
-        <div class="column m-6">
-          <div class="container">
-            <div class={styles.card}>
+        <div className="column m-6">
+          <div className="container">
+            <div className={styles.card}>
               <label className="label">Donut Price : 1 ETH</label>
               <div className="control">
-                <input onChange={updateDonutQty} class="input is-rounded" type="text" placeholder="Enter amount ..." />
+                <input onChange={updateDonutQty} className="input is-rounded" type="text" placeholder="Enter amount ..." />
               </div> 
               <button onClick={buyDonutHandler} className="button is-primary mt-2" > BUY </button>
 
@@ -163,12 +163,12 @@ const VendingMachine = () => {
 
           </div>
         </div> 
-        <div class="column m-6">
+        <div className="column m-6">
           <div className="container">
             <div className="navbar-end">
               <div className={styles.card}>
-                <h2 class="subtitle is-3">Inventory: {inventory} </h2>
-                <h2 class="subtitle is-3">My Donuts : {donutCount} </h2> 
+                <h2 className="subtitle is-3">Inventory: {inventory} </h2>
+                <h2 className="subtitle is-3">My Donuts : {donutCount} </h2> 
               </div> 
             </div>
           </div>
